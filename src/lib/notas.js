@@ -54,7 +54,7 @@ function escalaLetra(valor) {
   if (!esNotaValida(valor)) {
     throw new Error('El promedio debe ser un numero entre 0 y 5');
   }
-  if (valor >= 4.5) return 'A';
+  if (valor >= 4.8) return 'A';
   if (valor >= 4.0) return 'B';
   if (valor >= 3.5) return 'C';
   if (valor >= 3.0) return 'D';
