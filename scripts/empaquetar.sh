@@ -22,7 +22,7 @@ rm -rf paquete deploy.zip
 
 echo "==> Copiando solo lo que se ejecuta en produccion"
 mkdir -p paquete
-cp -r src public package.json package-lock.json paquete/
+cp -r src public package.json package-lock.json Dockerfile paquete/
 
 echo "==> Instalando dependencias de produccion dentro del paquete"
 # --omit=dev deja fuera jest y supertest: no se prueba en produccion.
